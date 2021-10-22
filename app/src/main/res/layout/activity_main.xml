@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heads"
+        android:id="@+id/kep"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fej_iras"
+        android:layout_below="@id/kep">
+
+        <Button
+            android:id="@+id/fej"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="FEJ"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="ÍRÁS"
+            android:textColor="#FFFFFF"
+            android:id="@+id/iras"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dobások: 0"
+        android:id="@+id/dobasok"
+        android:textSize="20dp"
+        android:layout_below="@id/fej_iras"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Győzelem: 0"
+        android:id="@+id/gyozelem"
+        android:textSize="20dp"
+        android:layout_below="@id/dobasok"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vereség: 0"
+        android:id="@+id/vereseg"
+        android:textSize="20dp"
+        android:layout_below="@id/gyozelem"
+        />
+</RelativeLayout>
